@@ -52,13 +52,7 @@ module.exports = {
     compress: true,
     contentBase: '/www/',
     disableHostCheck: true,
-    historyApiFallback: true,
-    proxy: {
-      '/monaca_terminal': {
-         target: socketPort,
-         ws: wss
-      },
-    },
+    historyApiFallback: true
   },
   optimization: {
     concatenateModules: true,
