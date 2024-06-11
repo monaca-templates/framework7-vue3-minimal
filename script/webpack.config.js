@@ -175,7 +175,7 @@ module.exports = {
         template: './src/public/index.html.ejs',
         inject: true,
         externalCSS: ['components/loader.css'],
-        externalJS: ['components/loader.js'],
+        externalJS: ['cordova.js', 'components/loader.js'],
         minify: env === 'production' ? {
           collapseWhitespace: true,
           removeComments: true,
